@@ -1,12 +1,10 @@
 import Hangman from './hangman'
 import getPuzzle from './request'
 
-
 const puzzleElement = document.querySelector('#puzzle')
 const guessElement = document.querySelector('#guesses')
 const resetElement = document.querySelector('#reset')
 let game1
-
 
 window.addEventListener('keypress', (e) => {
     const guess = String.fromCharCode(e.charCode)
